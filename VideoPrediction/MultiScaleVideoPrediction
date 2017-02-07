@@ -1,0 +1,40 @@
+# Deep Multi-Scale Video prediction Beyond Mean Square Error
+---
+* overview
+  * Objective: Predict future frames on given video frame using GAN
+  * Problems in previous method
+      * MSE loss function makes blurry predictions
+      * Convolution only account for short-range dependencies
+  * method
+      * Multi-scale network
+      * Adversarial training
+      * Image gradient difference loss(GDL)
+
+
+* Multi-scale network
+    * resolve short-range dependencies
+![](./multiscale.png)
+
+
+* Adversarial training
+  * reduce MSE problem
+![](./gan_reason.png)
+
+
+* Image gradient
+![](./GDL.png)
+
+
+* total loss
+![](./total_loss.png)
+
+
+* Experiments
+  * evaluation metrics
+      * PSNR
+      * SSIM
+      * sharpness
+  * result
+![](./result1.png)
+![](./result2.png)
+![](./result3.png)
