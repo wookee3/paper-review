@@ -5,7 +5,7 @@
 
 ---
 * Overview
-  * Propose adversarial training of a generative model of normal appearance and a coupled mapping schema that enables the evaluation of novel data to identify anomalous images and segment anomalous regions within imaging data.
+  * Propose adversarial training of a generative model of normal appearance and a coupled mapping schema that enables the evaluation of novel data to identify anomalous images and segment anomalous regions within imaging data.  
 ![system](./system.PNG)
 
 * Method  
