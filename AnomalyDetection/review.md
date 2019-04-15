@@ -6,6 +6,7 @@
 1. 의료 데이터는 레이블된 데이터가 거의 없다
 2. 레이블되지 않은 데이터도 많지 않다
 3. (my opinion) 의료 데이터는 굉장히 dimension이 큰데 anomaly가 전체 이미지 중에 소수 부분에서만 나타나고 나머지는 정상적으로 보이는 경우가 대부분이다
+4. 연구 결과가 adversarial attack과 같은 machine learning 시스템 공격에 대한 연구에도 활용될 수 있을 것임  
 
 ---
 ## Methods
@@ -13,12 +14,12 @@
 anomaly detection 또는 의료 데이터를 위한 augmentation 방법론들의 모음  
 
 * One-class classification  
-one-class SVM이 가장 대표적인 방법론임. 최근에 제안되는 방법론들은 autoencoder를 통해 latent space를 배우고 이 space 상에서 one-class classification을 학습하는 방식을 활용함  
-[ref 5.](#ref5) 학습된 latent space 상에서 classifier 학습  
-[ref 6.](#ref6) 학습된 latent space 상에서 classifier 학습
+one-class SVM이 가장 대표적인 방법론임. 최근에 제안되는 방법론들은 autoencoder를 통해 latent space를 배우고 이 space 상에서 one-class classification을 학습하거나 discriminator를 classifier로 사용함
+[ref 5.](#ref5) discriminator를 classifier로 사용하며, reconstruction 결과를 anomaly score 계산에 활용  
+[ref 6.](#ref6) 학습된 latent space 상에서 rbf svm classifier 학습
 
 * Latent based model (GAN, VAE)  
-neural network를 통해 학습된 latent space를 이용한 방법론들로 GAN, VAE를 활용하는 방법이 가장 대표적이다. latent space를 이용해 다양한 응용이 가능하며, 다르게 분류된 방법에서도 이를 활용하는 경우가 있다. anomaly score로 reconstruction loss나 discriminator loss를 주로 사용함. 
+neural network를 통해 학습된 latent space를 이용한 방법론들로 GAN, VAE를 활용하는 방법이 가장 대표적이다. latent space를 이용해 다양한 응용이 가능하며, 다르게 분류된 방법에서도 이를 활용하는 경우가 있다. anomaly score로 reconstruction loss나 discriminator loss를 주로 사용함.  
 [ref 2.](#ref2) GAN을 적용하여 residual loss와 discriminator loss를 anomaly score로 anomaly detection 수행   
 [ref 3.](#ref3) AnoGAN의 encoder가 없어서 시간이 오래걸린다는 점을 VAE를 도입해 개선한 모델. 실험결과에서 inference time 뿐만 아니라 성능도 우수하다고 나타나나 확인이 필요함  
 [ref 7.](#ref7) Adversarial autoencoder에 image classifier와 informative negative mining을 도입하여 latent space 상의 out-of-distribution을 찾은 뒤 해당 영역을 in-distribution sample을 생성하도록 학습. 즉, 전체 latent space에서 out-of-distribution이 최대한 생성되지 않도록 함. 따라서 reconstruction error가 anomaly score로써 더 적합해짐
