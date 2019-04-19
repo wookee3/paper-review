@@ -17,6 +17,7 @@
 $L_{R}(z_{\gamma}) = \sum |x-G(z_{\gamma})|$
     - Discriminator loss with feature matching  
 $L_{D}(z_{\gamma}) = \sum |f(x)-f(G(z_{\gamma}))|$
+  * discrimination loss에 feature matching을 도입하여 성능 향상
   * Anomaly를 찾는 방법
     - z 값을 찾는 과정을 수행
     - 마지막 z의 loss값을 계산하여 이를 anomaly score로 활용
