@@ -13,6 +13,6 @@
   * 비디오를 시간에 따라 segment를 나눠 positive bag과 negative bag을 만듬
   * 각각의 segment를 pre-trained model로 피쳐를 뽑음
   * 뽑힌 피쳐를 이용해 각각의 segment의 anomaly score를 계산하는 네트워크를 통해 anomaly score를 계산
-  * 아래의 ranking loss를 기반으로 학습을 진행
+  * 아래의 ranking loss를 기반으로 학습을 진행  
 ![loss](./loss.PNG)   
 ![model](./model.PNG)
