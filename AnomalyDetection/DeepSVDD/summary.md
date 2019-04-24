@@ -1,5 +1,5 @@
 # Deep One-Class Classification
-[paper]()  
+[paper](http://proceedings.mlr.press/v80/ruff18a.html)  
 [code]()
 
 ---

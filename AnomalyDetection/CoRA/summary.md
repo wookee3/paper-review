@@ -1,6 +1,6 @@
 # Learning Competitive and Discriminative Reconstructions for Anomaly Detection
 
-[paper]()  
+[paper](https://arxiv.org/abs/1903.07058)  
 [code]()
 
 ---
