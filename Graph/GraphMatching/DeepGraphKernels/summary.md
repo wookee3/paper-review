@@ -25,6 +25,10 @@ keyword: Graph kernel,
   * Weisfeiler-Lehman kernel
     * iteration을 반복하여, 노드와 neighborhood의 label을 이용해서 새로운 라벨과 노드를 만들어냄
     * 그 이후에 label의 co-occurence를 세서 두 그래프의 kernel값을 계산
+  * Subgraph kernel
+    * $k_x(G_1,G_2)=\sum_{G_1}\sum_{G_2}\lambda_s(G^{'}_{1})k_\cong(G^{'}_{1}, G^{'}_{2})$
+  * Subgraph matching kerenl
+    * 
 
 * method
   * $M$을 어떻게 사용하고 학습하느냐를 본 연구에서 제안
