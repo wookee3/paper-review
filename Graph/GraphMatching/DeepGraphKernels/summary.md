@@ -27,7 +27,10 @@ keyword: Graph kernel,
     * 그 이후에 label의 co-occurence를 세서 두 그래프의 kernel값을 계산
   * Subgraph kernel
     * $k_x(G_1,G_2)=\sum_{G_1}\sum_{G_2}\lambda_s(G^{'}_{1})k_\cong(G^{'}_{1}, G^{'}_{2})$
+    * $k_\cong$는 isomorphism kernel로 subgraph들의 isomorphism 여부를 matrix로 표현한 값이 된다.
   * Subgraph matching kerenl
+    * test
+  * Pyramid match graph kernel
     * 
 
 * method
