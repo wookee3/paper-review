@@ -16,7 +16,7 @@
     1. Choosing a datapoint from $x^{(i)}$
     2. sampling from $q(z|x^{(i)})$, approximating $q(z)$
     3. sampling a batch from $q(z)$ and then randomly permuting across the batch for each latent dimension
-    4. Discriminator can approximate the density ratio that arises in the KL term, $KL(q(z)|\bar{q}(z))$
+    4. Discriminator can approximate the density ratio that arises in the KL term, $KL(q(z)|\bar{q}(z))$  
     ![algorithm](./algorithm.png)
 
   - metric
@@ -25,7 +25,7 @@
     3. obtain their representations
     4. normalise each dimension by its empirical standard deviation over the full datasets
     5. take the empirical variance in each dimension of these normalised representations
-    6. the index of the dimension with the lowest variance and the target index k provide one training input/output example for the classifier
+    6. the index of the dimension with the lowest variance and the target index k provide one training input/output example for the classifier  
 ![metric](./metric.png)
 
 * Experiments
