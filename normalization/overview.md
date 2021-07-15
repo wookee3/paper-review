@@ -1,5 +1,5 @@
 # Normalization technique for deep learning
-deep learning 학습이 고도화를 위한 다양한 normalization technique 정리
+deep learning 학습 고도화를 위한 다양한 normalization technique 정리
 
 ---
 ## paper list
